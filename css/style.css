@@ -47,6 +47,9 @@ a{
     text-decoration: none;
 }
 /* start nav */
+.navbar {
+  overflow: hidden;
+}
 .nav-link{
     color: var(--therd-color);
     font-size: 20px;
@@ -127,7 +130,6 @@ color: var(--second-color) !important;
   position: relative;
   margin-bottom: 30px;
   padding-top: 5px;
-  
 }
 #features .card1 {
   border: 1px solid var(--main-color);
