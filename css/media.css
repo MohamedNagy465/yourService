@@ -112,6 +112,9 @@
   #features .col-md-4 {
     max-width: 100%;
   }
+  #features {
+    overflow: hidden;
+  }
 }
 /* ===== */
 @media (max-width: 992px) {

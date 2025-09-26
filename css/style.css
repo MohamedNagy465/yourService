@@ -127,6 +127,7 @@ color: var(--second-color) !important;
   position: relative;
   margin-bottom: 30px;
   padding-top: 5px;
+  
 }
 #features .card1 {
   border: 1px solid var(--main-color);
@@ -199,8 +200,8 @@ color: var(--second-color) !important;
 .footer-shape-1,
 .footer-shape-2 {
   position: absolute;
-  width: auto;   /* تخلي العرض طبيعي */
-  height: auto;  /* تخلي الارتفاع طبيعي */
+  width: auto;   
+  height: auto;  
 }
 
 .footer-shape-1 {
