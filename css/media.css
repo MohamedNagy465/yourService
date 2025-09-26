@@ -190,7 +190,14 @@
 @media (max-width: 576px) {
   #reviews .cardHeader h5 { font-size: 14px; }
   #reviews .card .text { font-size: 13px; }
+  .swiper-slide .dots-right{
+    display: none;
+  }
+  #reviews .dots-left{
+    display: none;
+  }
 }
+
 
 /* ====== Footer Section ====== */
 @media (max-width: 992px) {

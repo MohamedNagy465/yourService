@@ -277,8 +277,8 @@ color: var(--second-color) !important;
 }
 .swiper-slide .dots-right {
   position: absolute;
-  top: -30px;    /* فوق شوية */
-  right: 0px;  /* ناحية اليمين */
+  top: -30px;    
+  right: 0px;  
   width: 60px;
   opacity: 0.5;
   pointer-events: none;
@@ -294,7 +294,7 @@ color: var(--second-color) !important;
   padding: 18px;
   text-align: start;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #reviews .testimonial-header{
   display: flex;
