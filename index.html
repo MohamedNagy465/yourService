@@ -22,7 +22,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="70" tabindex="0">
 
   <main>
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-example">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-example">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./imegas/logo.png" alt="logo" width="40">
@@ -188,6 +188,8 @@
     </div>
   </div>
 </section>
+<!-- end Features-->
+<!-- start screens -->
   <section id="screens" class=" position-relative" data-aos="fade-up" data-aos-duration="1000"> 
   <div class="container position-relative">
     <div class="text-center mb-5">
@@ -195,11 +197,22 @@
     </div>
     <img src="./imegas/span.footer__shape.png" 
          alt="صورة خلفية يسار فوق" 
-         class="position-absolute -top-10 start-0 d-none d-lg-block">
+         class="position-absolute -top-10 start-0 
+         shape1">
 
+   <div class="shape2
+   ">
+     <img src="./imegas/span.footer__shape.png" 
+         alt="صورة خلفية يمين تحت" 
+         class="position-absolute 
+         footer-shape-2
+         d-none d-lg-block flip-horizontal">
     <img src="./imegas/span.footer__shape.png" 
          alt="صورة خلفية يمين تحت" 
-         class="position-absolute bottom-0 end-0 d-none d-lg-block flip-horizontal">
+         class="position-absolute
+         footer-shape-1
+          d-none d-lg-block flip-horizontal">
+   </div>
     <div class="swiper screens-swiper">
       <div class="swiper-wrapper ">
         <div class="swiper-slide"><img src="./imegas/screen-1.png.png" alt=""></div>
@@ -219,17 +232,21 @@
     </div>
   </div>
 </section>
-<section id="reviews" class="py-5" data-aos="fade-up" data-aos-duration="1000"> 
+<!-- end screens -->
+<!-- start reviews -->
+<section id="reviews" class="py-5" data-aos="zoom-in" data-aos-duration="1000"> 
     <!-- العنوان -->
     <div class="container  position-relative">
-    <div class="mb-5 text-center">
+    <img src="./imegas/dots.png" alt="" class="dots-left">
+
+    <div class="text-header mb-5 text-center">
       <h6 class="secondColor">أراء العملاء</h6>
       <h5 class="mainColor">تعرف علي أراء العملاء و تقييماتهم</h5>
     </div>
     <div class="reviews-arrows-wrapper mb-4" data-aos="fade-right" data-aos-duration="1000">
   <div class="reviews-arrows-box">
-    <i class="fa-solid fa-arrow-left arrow-btn2"></i>
-    <i class="fa-solid fa-arrow-right arrow-btn"></i>
+    <i class="fa-solid fa-arrow-right arrow-btn2"></i>
+    <i class="fa-solid fa-arrow-left arrow-btn"></i>
   </div>
 </div>
 
@@ -237,11 +254,12 @@
       <div class="swiper-wrapper">
         <!-- بطاقة 1 -->
         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+          <img src="./imegas/dots.png " alt="" class="dots-right">
           <div class="card p-4 d-flex flex-column gap-3">
             <div class="cardHeader d-flex gap-2 align-items-center">
               <img src="./imegas/Rectangle 729.png" alt="">
               <div class="icon">
-                <h5>اسم المستخدم</h5>
+                <h5 class="mainColor">اسم المستخدم</h5>
                 <i class="fa-solid fa-star-half-stroke "></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
                 <i class="fa-solid fa-star"></i>
@@ -255,12 +273,12 @@
         </div>
 
         <!-- بطاقة 2 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="200">
           <div class="card p-4 d-flex flex-column gap-3">
             <div class="cardHeader d-flex gap-2 align-items-center">
               <img src="./imegas/Rectangle 729.png" alt="">
               <div class="icon">
-                <h5>اسم المستخدم</h5>
+                <h5 class="mainColor">اسم المستخدم</h5>
                 <i class="fa-solid fa-star-half-stroke"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
                 <i class="fa-solid fa-star"></i>
@@ -279,7 +297,7 @@
             <div class="cardHeader d-flex gap-2 align-items-center">
               <img src="./imegas/Rectangle 729.png" alt="">
               <div class="icon">
-                <h5>اسم المستخدم</h5>
+                <h5 class="mainColor">اسم المستخدم</h5>
                 <i class="fa-solid fa-star-half-stroke"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
                 <i class="fa-solid fa-star"></i>
@@ -295,6 +313,8 @@
     </div>
   </div>
 </section>
+<!-- end reviews -->
+<!-- start cta -->
     <section id="cta" class="cta-section py-5 position-relative" 
     data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
@@ -336,6 +356,8 @@
     </div>
   </div>
 </section>
+<!-- end cta -->
+
  <!-- start footer -->
      <footer class="footer position-relative">
   <div class="container d-flex justify-content-between align-items-center">    
@@ -361,6 +383,7 @@
 </footer>
 <!-- end footer -->
   </main>
+  <!-- js aos -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
   AOS.init({

@@ -154,6 +154,9 @@
     margin: 0 auto;
     margin-bottom: 30px;
   }
+  .swiper-pagination{
+    display: none;
+  }
 }
 /* ====== CTA Section ====== */
 @media (max-width: 768px) {

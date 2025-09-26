@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
  font-weight: bold;
 }
 
-    p {
+p {
   font-weight: normal; 
 }
 
@@ -59,6 +59,18 @@ a{
 nav ul li a.active {
   color: var(--main-color) !important;
 }
+/* الحالة الافتراضية: شفاف */
+#navbar-example {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+}
+
+/* لما يضاف الكلاس scrolled */
+#navbar-example.scrolled {
+  background-color: #fff; /* تقدر تخليها أي لون */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
 /* end nav */
 /* start home  */
 .home{
@@ -111,7 +123,6 @@ color: var(--second-color) !important;
 /* end about */
 /* start features */
 #features {
-    overflow: hidden;
   background: #f3bc44bd;
   position: relative;
   margin-bottom: 30px;
@@ -185,15 +196,56 @@ color: var(--second-color) !important;
   position: relative;
   z-index: 1;
 }
+.footer-shape-1,
+.footer-shape-2 {
+  position: absolute;
+  width: auto;   /* تخلي العرض طبيعي */
+  height: auto;  /* تخلي الارتفاع طبيعي */
+}
+
+.footer-shape-1 {
+  bottom: 15px;
+  transform: rotate(190deg);
+}
+
+.footer-shape-2 {
+  bottom: 80px;
+  transform: rotate(180deg);
+  /* right: 10px; */
+  width: 110px !important;
+}
+.shape1{
+  position: absolute;
+  left: -120px !important;
+  width: 150px !important;
+  top: 40px !important;
+}
+.shape2{
+  position: absolute;
+  bottom: 0;
+  right: -103px;
+}
+
 /* end  screens*/
 /* start reviews  */
 #reviews{
     overflow: hidden;
 }
+#reviews .dots-left{
+  position: absolute;
+  top: 5px;
+  left: -110px;
+}
 .reviews-arrows-wrapper { 
   display: flex;
   justify-content: flex-end; 
   margin-bottom: 20px;
+}
+.text-header h5{
+  font-size: 32px;
+}
+.text-header h6{
+  font-size: 24px;
 }
 .reviews-arrows-box {
   display: flex;
@@ -214,8 +266,27 @@ color: var(--second-color) !important;
   transition: all 0.3s;
   border: 1px solid var(--main-color);
 }
-#reviews .swiper-slide{
-    overflow: hidden;
+.arrow-btn:hover,
+.arrow-btn2:hover{
+  background-color: var(--main-color);
+  color: white;
+}
+.swiper-slide{
+  position: relative;
+  overflow: visible;
+}
+.swiper-slide .dots-right {
+  position: absolute;
+  top: -30px;    /* فوق شوية */
+  right: 0px;  /* ناحية اليمين */
+  width: 60px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+#reviews .swiper-slide p{
+  font-size: 16px;
+  color: #8C8F95;
+
 }
 #reviews .testimonial-card{
   background: #fff;
@@ -223,7 +294,7 @@ color: var(--second-color) !important;
   padding: 18px;
   text-align: start;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #reviews .testimonial-header{
   display: flex;
@@ -238,7 +309,7 @@ color: var(--second-color) !important;
   object-fit: cover;
 }
 #reviews .rating i{
-  color: #F3BB44;
+  color: var(--second-color);
   font-size: 14px;
 }
 #reviews .testimonial-text{

@@ -1,26 +1,15 @@
-
-// -------------------- Screens Swiper --------------------
-function getBulletsCount() {
-  if (window.innerWidth < 576) return 1;   // 📱 موبايل صغير
-  if (window.innerWidth < 768) return 2;   // 📱 موبايل كبير
-  if (window.innerWidth < 992) return 3;   // 📱 تابلت
-  if (window.innerWidth < 1200) return 4;  // 💻 لابتوب صغير
-  return 5;                                // 🖥️ ديسكتوب
-}
-
-let totalBullets = getBulletsCount();
-
-const screensSwiper = new Swiper('.screens-swiper', { 
+  const screensSwiper = new Swiper('.screens-swiper', { 
   slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
   centeredSlides: true,
   speed: 3000,
+  allowTouchMove: true,
   autoplay: {
-    delay: window.innerWidth >= 992 ? 0 : 3000, // ✅ ديسك = مستمر / موبايل = كل 3 ثواني
+    delay: window.innerWidth >= 992 ? 0 : 3000, 
     disableOnInteraction: false,
   },
-  effect: window.innerWidth >= 992 ? 'coverflow' : 'slide', // ✅ ديسك = coverflow / موبايل = slide
+  effect: window.innerWidth >= 992 ? 'coverflow' : 'slide', 
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -32,7 +21,8 @@ const screensSwiper = new Swiper('.screens-swiper', {
     el: '.screens-swiper .swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      if (index < totalBullets) {
+      // ✅ دايمًا نعمل 6 نقاط فقط
+      if (index < 6) {
         return `<span class="${className}"></span>`;
       }
       return '';
@@ -51,22 +41,13 @@ const screensSwiper = new Swiper('.screens-swiper', {
   },
 });
 
-// ✅ تحديث عند تغيير حجم الشاشة
-window.addEventListener('resize', () => {
-  totalBullets = getBulletsCount();
-  screensSwiper.params.autoplay.delay = window.innerWidth >= 992 ? 0 : 3000;
-  screensSwiper.params.effect = window.innerWidth >= 992 ? 'coverflow' : 'slide';
-  screensSwiper.pagination.render();
-  screensSwiper.pagination.update();
-  screensSwiper.update();
-});
-
 // 🖱️ إيقاف autoplay عند hover في الديسك فقط
 const screensSwiperEl = document.querySelector('.screens-swiper');
 if (window.innerWidth >= 992) {
   screensSwiperEl.addEventListener('mouseenter', () => screensSwiper.autoplay.stop());
   screensSwiperEl.addEventListener('mouseleave', () => screensSwiper.autoplay.start());
 }
+
 
 
 // -------------------- Testimonials Swiper --------------------
@@ -103,3 +84,11 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar-example');
+  if (window.scrollY > 50) { // بعد ما ينزل شوية
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
