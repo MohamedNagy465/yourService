@@ -19,15 +19,12 @@
   .home .iner h2 {
     font-size: 21px;
   }
-
   .home .iner h1 {
     font-size: 32px;
   }
-
   .home .iner p {
     font-size: 15px;
   }
-
   .home .download {
     justify-content: center;
     gap: 10px;
@@ -35,7 +32,6 @@
     margin-top: 15px;
   }
 }
-
 @media (max-width: 576px) {
   .home .iner h2 { font-size: 19px; }
   .home .iner h1 { font-size: 24px; }
@@ -63,16 +59,13 @@
   #features h2 {
     font-size: 28px;
   }
-
   .card-feature h5 {
     font-size: 16px;
   }
-
   .card-feature p {
     font-size: 13px;
   }
 }
-
 /* شاشات صغيرة */
 @media (max-width: 768px) {
   #features .row {
@@ -97,7 +90,6 @@
     margin-top: 15px;
   }
 }
-
 /* شاشات صغيرة جدًا */
 @media (max-width: 576px) {
   #features h2 {
@@ -106,11 +98,9 @@
   .card-feature h5 {
     font-size: 18px;
   }
-
   .card-feature p {
     font-size: 12px;
   }
-
   #features .col-md-4 {
     max-width: 100%;
   }
@@ -203,36 +193,39 @@
   #reviews .cardHeader h5 { font-size: 16px; }
   #reviews .card .text { font-size: 15px; }
 }
-@media (max-width: 576px) {  
+@media (max-width: 576px) {
   #reviews {
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #reviews .mySwiper {
-    width: 100% !important;
-     display: flex;
-    justify-content: center;
+    width: 100%;
+  }
+  #reviews .swiper-wrapper {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
   }
   #reviews .swiper-slide {
+    width: 100% !important;   
+    max-width: 100% !important;
+    margin: 0 auto !important;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+   .swiper-slide .card {
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  #reviews .swiper-slide .card {
-    width: 100%;               
-    max-width: 400px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;  
-    justify-content: center;  
-    align-items: center;     
-    text-align: center;      
-  }
 }
-
-
-
-/* ========= */
-
 /* ====== Footer Section ====== */
 @media (max-width: 992px) {
   .footer .container { flex-direction: column; align-items: center; gap: 15px; text-align: center; }
@@ -241,7 +234,6 @@
   .social-icons-wrapper { justify-content: center; align-items: center; }
   .footer-left .footer-bg-img { left: 50%; transform: translate(-50%, -50%); width: 80px; }
 }
-
 @media (max-width: 576px) {
   .footer .container { flex-direction: column; align-items: center; text-align: center; gap: 15px; }
   .footer-logo img { width: 40px; }
