@@ -1,11 +1,12 @@
-var swiper = new Swiper(".mySwiper", {   
+var swiper = new Swiper(".mySwiper", {    
   slidesPerView: 2,
   slidesPerGroup: 2,
   spaceBetween: 20,
   loop: false,                  
   watchOverflow: true,          
-  centeredSlides: false,        
-
+  centeredSlides: true,        
+  loopFillGroupWithBlank: false,
+  centerInsufficientSlides: true,
   navigation: {
     nextEl: ".arrow-btn2", 
     prevEl: ".arrow-btn", 
@@ -14,27 +15,40 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-
   breakpoints: {
     0: {   
-      slidesPerView: 1,      
+      slidesPerView: 1,
       slidesPerGroup: 1,
-      centeredSlides: false,   
+      centeredSlides: true,
+      spaceBetween: 10
     },
     576: { 
       slidesPerView: 1,
       slidesPerGroup: 1,
-      centeredSlides: false,
+      centeredSlides: true,
+      spaceBetween: 15
     },
-    768: { slidesPerView: 2, slidesPerGroup: 2, centeredSlides: false },
-    992: { slidesPerView: 2, slidesPerGroup: 2 },
-    1200:{ slidesPerView: 2, slidesPerGroup: 2 }
+    768: { 
+      slidesPerView: 2, 
+      slidesPerGroup: 2, 
+      centeredSlides: false,
+      spaceBetween: 20
+    },
+    992: { 
+      slidesPerView: 2, 
+      slidesPerGroup: 2,
+      centeredSlides: false,
+      spaceBetween: 25
+    },
+    1200:{ 
+      slidesPerView: 2, 
+      slidesPerGroup: 2,
+      centeredSlides: false,
+      spaceBetween: 30
+    }
   }
 });
-
-
 const isDesktop = window.innerWidth >= 992;
-
 const screensSwiper = new Swiper('.screens-swiper', {
   slidesPerView: 5,
   spaceBetween: 20,

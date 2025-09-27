@@ -210,43 +210,33 @@
   #reviews .card .text { font-size: 15px; }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) {  
   #reviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 0;
   }
-
   #reviews .mySwiper {
-    width: 100%;
-  }
-
-  #reviews .swiper-wrapper {
-    display: flex;
+    width: 100% !important;
+     display: flex;
     justify-content: center;
-    align-items: center;
   }
-
   #reviews .swiper-slide {
-    width: 100% !important;   
-    max-width: 100% !important;
-    margin: 0 auto !important;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
-  
-   .swiper-slide .card {
-    width: 100%;
+  #reviews .swiper-slide .card {
+    width: 100%;               
+    max-width: 400px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;     
+    text-align: center;      
   }
-
 }
+
+
 
 /* ========= */
 
