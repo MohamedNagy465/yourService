@@ -4,7 +4,10 @@
     flex-direction: column;
     text-align: center;
   }
-
+  .home .hero{
+    margin-top: 10px;
+    width: 80%;
+  }
   .home .col-md-6.order-md-2 {
     order: 1;
   }
@@ -98,15 +101,15 @@
 /* شاشات صغيرة جدًا */
 @media (max-width: 576px) {
   #features h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .card-feature h5 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .card-feature p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   #features .col-md-4 {
@@ -114,6 +117,12 @@
   }
   #features {
     overflow: hidden;
+  }
+  .card-feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* ===== */
@@ -148,19 +157,29 @@
 @media (max-width: 576px) {
   #screens h2 {
     font-size: 20px;
+    text-align: center; /* العنوان يبقى في النص */
   }
-  .screens-swiper .swiper-slide{
+
+  .screens-swiper .swiper-slide {
+    display: flex;              /* خليها flex عشان تتحكم في التمركز */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
   }
-  .screens-swiper .swiper-slide img{
-     max-width: 60%;
-    margin: 0 auto;
-    margin-bottom: 30px;
+
+  .screens-swiper .swiper-slide img {
+    max-width: 70%;             
+    height: auto;
+    margin: 0 auto 25px;        
+    display: block;
   }
-  .swiper-pagination{
-    display: none;
+
+  .swiper-pagination {
+    display: none !important;
   }
 }
+
 /* ====== CTA Section ====== */
 @media (max-width: 768px) {
   .cta-section .ctaCard { flex-direction: column; padding: 20px; }
@@ -175,9 +194,12 @@
   .cta-section .cta-subtitle { font-size: 14px; }
   .cta-section .store-btn { width: 120px; }
   .cta-image { max-height: 250px; }
-    #reviews .swiper-slide { max-width: 95%; margin: 0 auto;
-    text-align: center; }
-
+  .cta-ellipse3{     
+    display: none;
+  }
+  .cta-phone{
+    margin-top: 10px;
+  }
 }
 
 /* ====== Reviews Section ====== */
@@ -191,16 +213,44 @@
 }
 
 @media (max-width: 576px) {
-  #reviews .cardHeader h5 { font-size: 14px; }
-  #reviews .card .text { font-size: 13px; }
-  .swiper-slide .dots-right{
-    display: none;
+  #reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #reviews .dots-left{
-    display: none;
+
+  #reviews .mySwiper {
+    width: 100%;
   }
+
+  #reviews .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reviews .swiper-slide {
+    width: 100% !important;   
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   .swiper-slide .card {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
+/* ========= */
 
 /* ====== Footer Section ====== */
 @media (max-width: 992px) {

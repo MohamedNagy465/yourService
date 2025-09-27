@@ -22,7 +22,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="70" tabindex="0">
 
   <main>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-example">
+    <nav class="navbar navbar-expand-lg  fixed-top" id="navbar-example">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./imegas/logo.png" alt="logo" width="40">
@@ -31,9 +31,9 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
               aria-expanded="false" aria-label="تبديل القائمة">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse text-center bg-white" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" href="#home">الرئيسية</a>
@@ -64,7 +64,7 @@
       
       <!-- الصورة -->
       <div class="col-md-6 order-md-2 order-1 text-center"  data-aos="fade-left" data-aos-duration="1000">
-        <img src="./imegas/home.png" alt="خدمتك" class="img-fluid">
+        <img src="./imegas/home.png" alt="خدمتك" class="img-fluid hero">
       </div>
 
       <!-- النص -->
@@ -128,7 +128,7 @@
 </div>
       <!-- الكروت -->
       <div class="col-md-8">
-        <div class="row g-4 ">
+        <div class="row g-4">
           <!-- ميزة 1 -->
           <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="card1 h-100 card-feature">
@@ -197,7 +197,7 @@
     </div>
     <img src="./imegas/span.footer__shape.png" 
          alt="صورة خلفية يسار فوق" 
-         class="position-absolute -top-10 start-0 
+         class="position-absolute 
          shape1">
 
    <div class="shape2
@@ -213,23 +213,18 @@
          footer-shape-1
           d-none d-lg-block flip-horizontal">
    </div>
-    <div class="swiper screens-swiper">
-      <div class="swiper-wrapper ">
-        <div class="swiper-slide"><img src="./imegas/screen-1.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-2.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-3.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-4.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-5.png.png" alt=""></div>
+  <div class="swiper screens-swiper">
+  <div class="swiper-wrapper ">
+    <div class="swiper-slide"><img src="./imegas/screen-1.png.png" alt=""></div>
+    <div class="swiper-slide"><img src="./imegas/screen-2.png.png" alt=""></div>
+    <div class="swiper-slide"><img src="./imegas/screen-3.png.png" alt=""></div>
+    <div class="swiper-slide"><img src="./imegas/screen-4.png.png" alt=""></div>
+    <div class="swiper-slide"><img src="./imegas/screen-5.png.png" alt=""></div>
+    <div class="swiper-slide"><img src="./imegas/screen-1.png.png" alt=""></div> <!-- وهمية -->
+  </div>
+  <div class="swiper-pagination "></div>
+</div>
 
-        <!-- نكرر نفس الصور عشان ما يبانش أي فراغ -->
-        <div class="swiper-slide"><img src="./imegas/screen-1.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-2.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-3.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-4.png.png" alt=""></div>
-        <div class="swiper-slide"><img src="./imegas/screen-5.png.png" alt=""></div>
-      </div>
-      <div class="swiper-pagination"></div>    
-    </div>
   </div>
 </section>
 <!-- end screens -->
@@ -327,10 +322,12 @@
       <!-- النص -->
       <div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-center"
       data-aos="fade-right" data-aos-delay="200">
-        <h3 class="cta-title mb-2">قم بتحميل التطبيق</h3>
-        <p class="cta-subtitle mb-4">
+       <div class="text mt-5">
+         <h4 class="cta-title ">قم بتحميل التطبيق</h4>
+        <p class="cta-subtitle ">
           التطبيق متوفر الآن علي جميع منصات التحميل جوجل بلاي و آب استور !
         </p>
+       </div>
         <div class="d-flex gap-3 flex-wrap justify-content-center">
           <a href="#" class="store-link">
             <img src="./imegas/Group (3).png" alt="App Store" class="store-btn">
@@ -357,7 +354,6 @@
   </div>
 </section>
 <!-- end cta -->
-
  <!-- start footer -->
      <footer class="footer position-relative">
   <div class="container d-flex justify-content-between align-items-center">    
@@ -393,6 +389,8 @@
   <!-- Bootstrap JS -->
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--  -->
+  
 
   <!-- ملف جافاسكربت -->
   <script src="./js/main.js"></script>

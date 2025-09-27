@@ -49,6 +49,7 @@ a{
 /* start nav */
 .navbar {
   overflow: hidden;
+  
 }
 .nav-link{
     color: var(--therd-color);
@@ -156,6 +157,11 @@ color: var(--second-color) !important;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   position: relative;
   margin-top: 0 !important;
+  transition: box-shadow 0.3s ease;
+
+}
+.card-feature:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.50);
 }
 .card-feature h5{
     font-size: 20px;
@@ -199,6 +205,15 @@ color: var(--second-color) !important;
   position: relative;
   z-index: 1;
 }
+.screens-swiper {
+  position: relative;
+}
+.screens-swiper .swiper-pagination {
+  position: relative;  
+  bottom: 0;          
+  margin-top: 15px;    
+  text-align: center;
+}
 .footer-shape-1,
 .footer-shape-2 {
   position: absolute;
@@ -214,7 +229,6 @@ color: var(--second-color) !important;
 .footer-shape-2 {
   bottom: 80px;
   transform: rotate(180deg);
-  /* right: 10px; */
   width: 110px !important;
 }
 .shape1{
@@ -228,7 +242,6 @@ color: var(--second-color) !important;
   bottom: 0;
   right: -103px;
 }
-
 /* end  screens*/
 /* start reviews  */
 #reviews{
@@ -354,16 +367,15 @@ color: var(--second-color) !important;
   transform: rotate(-120deg);
 }
 .cta-title {
-  font-size: 2rem;
+  font-size: 64px;
   font-weight: 700;
   color: #222;
   margin-bottom: 15px;
 }
 .cta-subtitle {
-  font-size: 1.1rem;
-  color: #555;  
+  font-size: 24px;
+  color: #1f1f1f;  
   margin-bottom: 25px;
-  text-align: center;
 }
 .store-btn {
   width: 160px;
@@ -374,11 +386,11 @@ color: var(--second-color) !important;
   transform: scale(1.05);
 }
 .cta-phone {
-  max-width: 100%;
+  max-width: 300px;
   max-height: 360px;
   border-radius: 30px;
   position: relative;
-  top: 0px;
+  top:0px;
   margin-left: 100px;
 }
 .cta-ellipse3 {
