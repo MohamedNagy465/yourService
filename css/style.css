@@ -267,6 +267,7 @@ color: var(--second-color) !important;
   display: flex;
   gap: 10px;
   overflow: hidden;
+  padding: 1px ;
 }
 .arrow-btn, .arrow-btn2 {
   width: 40px;
