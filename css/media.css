@@ -155,11 +155,11 @@
 @media (max-width: 576px) {
   #screens h2 {
     font-size: 20px;
-    text-align: center; /* العنوان يبقى في النص */
+    text-align: center; 
   }
 
   .screens-swiper .swiper-slide {
-    display: flex;              /* خليها flex عشان تتحكم في التمركز */
+    display: flex;              
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -167,7 +167,7 @@
   }
 
   .screens-swiper .swiper-slide img {
-    max-width: 70%;             
+    max-width: 50%;             
     height: auto;
     margin: 0 auto 25px;        
     display: block;

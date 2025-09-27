@@ -282,6 +282,11 @@ color: var(--second-color) !important;
   transition: all 0.3s;
   border: 1px solid var(--main-color);
 }
+.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .arrow-btn:hover,
 .arrow-btn2:hover{
   background-color: var(--main-color);
@@ -289,15 +294,7 @@ color: var(--second-color) !important;
 }
 .swiper-slide{
   position: relative;
-  overflow: visible;
-}
-.swiper-slide .dots-right {
-  position: absolute;
-  top: -30px;    
-  right: 0px;  
-  width: 60px;
-  opacity: 0.5;
-  pointer-events: none;
+  /* overflow: visible; */
 }
 #reviews .swiper-slide p{
   font-size: 16px;
@@ -310,7 +307,6 @@ color: var(--second-color) !important;
   padding: 18px;
   text-align: start;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  overflow: hidden;
 }
 #reviews .testimonial-header{
   display: flex;
@@ -429,8 +425,11 @@ color: var(--second-color) !important;
   z-index: 2;
 }
 .footer-logo img {
-  width: 40px;
+  width: 50px;
   height: auto;
+}
+.footer-logo h5{
+  font-size: 24px;
 }
 .social-icon {
   color: #fff;
