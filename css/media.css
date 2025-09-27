@@ -3,19 +3,19 @@
   .home .row {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .home .hero{
-    margin-top: 10px;
-    width: 80%;
+    margin-top: 15px;
+    width: 75%;
   }
   .home .col-md-6.order-md-2 {
     order: 1;
   }
-
   .home .col-md-6.order-md-1 {
     order: 2;
   }
-
   .home .iner h2 {
     font-size: 21px;
   }
@@ -41,6 +41,10 @@
   .home .iner h1 { font-size: 24px; }
   .home .iner p { font-size: 14px; }
   .home .download img { max-width: 140px; }
+  .home .hero{
+    margin-top: 15px;
+    width: 75%;
+  }
 }
 /* ====== About Section ====== */
 @media (max-width: 768px) {
@@ -74,25 +78,21 @@
   #features .row {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-
   #features h2 {
     font-size: 24px;
   }
-
   .card-feature h5 {
     font-size: 15px;
   }
-
   .card-feature p {
     font-size: 12px;
   }
-
   #features .col-md-4 {
     max-width: 90%;
     margin-bottom: 20px;
   }
-
   #features img.mt-5 {
     margin-top: 15px;
   }
@@ -103,7 +103,6 @@
   #features h2 {
     font-size: 24px;
   }
-
   .card-feature h5 {
     font-size: 18px;
   }
@@ -138,14 +137,13 @@
     margin: 0 auto;
   }
 }
-
 /* شاشات صغيرة */
 @media (max-width: 768px) {
   #screens h2 {
     font-size: 24px;
   }
   #screens img.position-absolute {
-    display: none; /* نخفي الصور الخلفية */
+    display: none; 
   }
   .screens-swiper .swiper-slide img {
     max-width: 85%;
